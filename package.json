@@ -7,7 +7,8 @@
     "lint": "eslint --ext .ts,.tsx src",
     "dev": "vite",
     "build": "tsc && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "postinstall": "sh scripts/copy-vizzu-wasm.sh"
   },
   "dependencies": {
     "react": "^17.0.0",
