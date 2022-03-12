@@ -1,6 +1,23 @@
 # Vizzu Chart Demo with Vite
 
-This demo works.
+## Adding Vizzu to an existing Vite project
+
+Install Vizzu from NPM:
+```bash 
+npm install --save vizzu
+```
+
+Import Vizzu and set the location of the wasm module before you call the Vizzu constructor:
+
+```Javascript { "run": false }
+import Vizzu from 'vizzu';
+import VizzuModule from 'vizzu/dist/cvizzu.wasm?url'
+
+Vizzu.options({ wasmUrl: VizzuModule })
+
+// let chart = new Vizzu(...);
+
+```
 
 ## Setup
 
