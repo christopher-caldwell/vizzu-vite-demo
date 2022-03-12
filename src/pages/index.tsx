@@ -1,6 +1,6 @@
 import React, { FC, useEffect, useRef } from 'react'
 import Vizzu, { AnimTarget } from 'vizzu'
-import VizzuModule from './../../node_modules/vizzu/dist/cvizzu.wasm?url'
+import VizzuModule from 'vizzu/dist/cvizzu.wasm?url'
 
 const data: AnimTarget['data'] = {
   series: [
