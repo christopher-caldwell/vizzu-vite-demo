@@ -1,5 +1,6 @@
 import React, { FC, useEffect, useRef } from 'react'
 import Vizzu, { AnimTarget } from 'vizzu'
+import VizzuModule from 'vizzu/dist/cvizzu.wasm?url'
 
 const data: AnimTarget['data'] = {
   series: [
@@ -12,6 +13,7 @@ const data: AnimTarget['data'] = {
 const Charts: FC = () => {
   const chartRef = useRef<HTMLDivElement>(null)
   useEffect(() => {
+    Vizzu.options({ wasmUrl: VizzuModule })
     const chartRefCopy = chartRef
     const chart = new Vizzu('myVizzu', { data })
     chart.animate({

@@ -1,12 +1,29 @@
 # Vizzu Chart Demo with Vite
 
-This demo works, but could be better. The wasm file needs to be copied to the public folder, but this is a small cost ( to me ).
+## Adding Vizzu to an existing Vite project
+
+Add Vizzu as dependency to the project:
+```bash 
+yarn add vizzu
+```
+
+Import Vizzu and set the location of the wasm module before you call the Vizzu constructor:
+
+```Javascript { "run": false }
+import Vizzu from 'vizzu';
+import VizzuModule from 'vizzu/dist/cvizzu.wasm?url'
+
+Vizzu.options({ wasmUrl: VizzuModule })
+
+// const chart = new Vizzu(...);
+
+```
 
 ## Setup
 
 To get started, clone the repository, or use the green "Use as a template" button on the top right.
 
-Run `yarn` to install the necessary dependencies. There is a `postinstall` script that will copy the `wasm` file to the proper directory. It's part of version control, but this is done to ensure that you have the latest version should you upgrade Vizzu versions.
+Run `yarn` to install the necessary dependencies.
 
 ## Running
 

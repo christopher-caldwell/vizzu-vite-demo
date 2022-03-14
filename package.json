@@ -7,13 +7,12 @@
     "lint": "eslint --ext .ts,.tsx src",
     "dev": "vite",
     "build": "tsc && vite build",
-    "serve": "vite preview",
-    "postinstall": "sh scripts/copy-vizzu-wasm.sh"
+    "serve": "vite preview"
   },
   "dependencies": {
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
-    "vizzu": "^0.3.3"
+    "vizzu": "^0.4.6"
   },
   "devDependencies": {
     "@types/node": "^14.14.31",
