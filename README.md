@@ -2,9 +2,9 @@
 
 ## Adding Vizzu to an existing Vite project
 
-Install Vizzu from NPM:
+Add Vizzu as dependency to the project:
 ```bash 
-npm install --save vizzu
+yarn add vizzu
 ```
 
 Import Vizzu and set the location of the wasm module before you call the Vizzu constructor:
@@ -15,7 +15,7 @@ import VizzuModule from 'vizzu/dist/cvizzu.wasm?url'
 
 Vizzu.options({ wasmUrl: VizzuModule })
 
-// let chart = new Vizzu(...);
+// const chart = new Vizzu(...);
 
 ```
 
